@@ -1,20 +1,22 @@
 import { useState } from 'react'
 import ArryObj from './ArryObj'
+import UseState from './UseState'
 import './App.css'
 
 function App() {
   // const [count, setCount] = useState(0)
-   let arr =[
-            {name:"John", id:1, city:"New York"},
-            {name:"Magnus", id:2, city:"London"},
-            {name:"Abd", id:3, city:"America"},
-            {name:"Criss", id:4, city:"Dubai"},
-            {name:"Sam", id:5, city:"Norvey"},
-        ]
+  //  let arr =[
+  //           {name:"John", id:1, city:"New York"},
+  //           {name:"Magnus", id:2, city:"London"},
+  //           {name:"Abd", id:3, city:"America"},
+  //           {name:"Criss", id:4, city:"Dubai"},
+  //           {name:"Sam", id:5, city:"Norvey"},
+  //       ]
 
   return (
     <div>
-      <ArryObj data={arr} student={"sumit"}/>
+      <UseState/>
+      {/* <ArryObj data={arr} student={"sumit"}/> */}
     </div>
     //<div>
     // {
