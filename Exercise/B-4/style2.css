@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    /* border: 1px solid black;  */
+}
+.diesel-navbar{
+    background-color: #e31f2e;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+}
+.nav-menu{
+    display: flex;
+}
+.menu{
+    margin-top: 17px;
+    display: none;
+}
+.menu i{
+    color: white;
+    font-size: 25px;
+}
+.menu span{
+    font-size: 17px;
+}
+.nav-menu ul{
+    display: flex;
+    height: 65px;
+    gap: 30px;
+    align-items: center;
+    padding: 10px;
+}
+.nav-menu li{
+    list-style: none;
+    color: white;
+    font-weight: 600;
+}
+.dropdown ul{
+    display: flex;
+    padding: 0;
+}
+.dropdown li{
+    list-style: none;
+    color: black;
+}
+.dropdown{
+    width: 100%;
+    position: absolute;
+    top:70px;
+    right: 0px;
+    display: none;
+    background-color: white;
+}
+.man{
+    position: relative;
+    left: 18px;
+}
+.man:hover + .dropdown{
+    display: block;
+}
+.man:hover{
+    color: black;
+}
+.man:hover ~ .women,
+.man:hover ~ .kid,
+.man:hover ~ .fw,
+.man:hover ~ .dr,
+.man:hover ~ .sale {
+    opacity: 0.7;
+}
+.dropdown-2 ul{
+    padding: 0;
+}
+.dropdown-2 li{
+    color: black;
+}
+.dropdown-2 {
+    width: 100%;
+    position: absolute;
+    top:70px;
+    right: 0px;
+    display: none;
+    background-color: white;
+}
+.women:hover + .dropdown-2
+{
+    display: block;
+}
+.women:hover{
+    color: black;
+}
+.women:hover ~ .kid,
+.women:hover ~ .fw,
+.women:hover ~ .dr,
+.women:hover ~ .sale {
+    opacity: 0.7;
+}
+.dropdown-3 ul{
+    padding: 0;
+}
+.dropdown-3 li{
+    color: black;
+}
+.dropdown-3 {
+    width: 100%;
+    position: absolute;
+    top:70px;
+    right: 0px;
+    display: none;
+    background-color: white;    
+}
+.kid:hover + .dropdown-3
+{
+    display: block;
+}
+.kid:hover{
+    color: black;
+}
+.kid:hover ~ .fw,
+.kid:hover ~ .dr,
+.kid:hover ~ .sale {
+    opacity: 0.7;
+}
+.dropdown-4 ul{
+    padding: 0;
+}
+.dropdown-4 li{
+    color: black;
+}
+.dropdown-4 {
+    width: 100%;
+    position: absolute;
+    top:70px;
+    right: 0px;
+    display: none;
+    background-color: white;
+}
+.fw:hover + .dropdown-4
+{
+    display: block;
+}
+.fw:hover{
+    color: black;
+}
+.fw:hover ~ .dr,
+.fw:hover ~ .sale {
+    opacity: 0.7;
+}
+.dropdown-5 ul{
+    padding: 0;
+}
+.dropdown-5 li{
+    color: black;
+}
+.dropdown-5 {
+    width: 100%;
+    position: absolute;
+    top:70px;
+    right: 0px;
+    display: none;
+    background-color: white;
+}
+.sale:hover + .dropdown-5
+{
+    display: block;
+}
+.sale:hover{
+    color: black;
+}
+.dr:hover{
+    color: black;
+}
+.dr:hover ~ .sale {
+    opacity: 0.7;
+}
+.nav-icon{
+    font-size: 23px;
+    color: oldlace;
+    border: 1px solid white;
+    display: flex;
+    height: 45px;
+    width: 250px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.nav-icon i{
+    border-right: 2px solid white;
+    height: 44px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bag i {
+    border-right: none;
+}
+.que-dropdown ul{
+    padding: 0;
+    margin: 0;
+    width: 225px;
+    height: 240px;
+}
+.que-dropdown li{
+    list-style: none;
+    font-size: 15px;
+    color: black;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+.que-dropdown{
+    position: absolute;
+    right: 5px;
+    background-color: white;
+    display: none;
+}
+.que:hover .que-dropdown{
+    display: block;
+}
+.man-pa{
+    padding-top: 90px;
+}
+.bor{
+    border: 2px solis white;
+    background-color: white;
+    width: 130px;
+    height: 45px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+.bor-1{
+    border: 2px solis white;
+    background-color: white;
+    width: 160px;
+    height: 45px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+.gap{
+    gap: 50px;
+}
+.main{
+    display: flex;
+}
+.back{
+    background-color: #e4002b;
+    height: 305px;
+}
+.back p{
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 25px;
+}
+.email{
+    width: 320px;
+    height: 40px;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+.email::placeholder{
+    padding-left: 10px;
+}
+.men{
+    margin-left: 200px;
+    margin-top: 30px;
+}
+.women{
+    margin-left: 20px;
+}
+.back button{
+    margin-left: 200px;
+    width: 330px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: white;
+    font-weight: 600;
+    border: none;
+}
+.con-ma{
+    margin-top: 90px;
+}
+.ins-ma{
+    margin-left: 250px;
+}
+.menu-3 a:hover{
+    border-bottom: 2px solid black;
+}
+@media (min-width:320px) and (max-width:425px) {
+    .diesel-navbar{
+        width: 100%;
+    }
+    .nav-menu ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+    .menu i{
+        font-size: 20px;
+    }
+    .menu span{
+        font-size: 15px;
+        margin-left: 0px;
+    }
+    .nav-logo img{
+        width: 120px;
+        height: 70px;
+    }
+    .nav-icon{
+        font-size: 12px;
+        border: none;
+        width: 100%;
+        gap: 5px;
+    }
+    .nav-icon i{
+        border: none;
+        width: 17px;
+    }
+    .col-1{
+        display: none;
+    }
+    .wid{
+        width: 100%;
+    }
+    .email{
+        margin: 0;
+        width: 310px;
+        height: 40px;
+    }
+    .back button{
+        margin: 0;
+        width: 310px;
+    }
+    .back{
+        height: 340px;
+    }
+    .men{
+        margin: 20px 0 0 0;
+    }
+    .con-ma{
+        margin: 50px 0 0 0;
+        width: 100%;
+    }
+    .ins-ma{
+        margin: 0 0 0 70px;
+    }
+}
+@media (min-width:426px) and (max-width:768px) {
+    .diesel-navbar{
+        width: 100%; 
+    }
+    .nav-menu ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .menu i{
+        font-size: 20px;
+    }
+    .menu span{
+        font-size: 15px;
+        margin-left: 5px;
+        
+    }
+    .nav-logo img{
+        width: 195px;
+        height: 70px;
+    }
+    .nav-icon{
+        font-size: 17px;
+        /* border: none; */
+        width: 150px;
+    }
+    .nav-icon i{
+        /* border: none; */
+        width: 30px;
+        /* margin-left:5px; */
+        margin-right: 0;
+    }
+    .col-1{
+        display: none;
+    }
+    .wid{
+        width: 100%;
+    }
+}
+@media (min-width:769px) and (max-width:1024px) {
+    .diesel-navbar{
+        width: 100%;
+    }
+    
+    .nav-menu li{
+        font-size: 12px;
+    }
+    .menu{
+        /* display: block; */
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .menu i{
+        font-size: 20px;
+    }
+    .menu span{
+        font-size: 15px;
+        margin-left: 5px;
+        
+    }
+    .nav-logo img{
+        width: 220px;
+        height: 70px;
+    }
+    .nav-icon{
+        font-size: 17px;
+        /* border: none; */
+        width: 175px;
+    }
+    .nav-icon i{
+        /* border: none; */
+        width: 35px;
+        /* margin-left:5px; */
+        margin-right: 0;
+    }   
+}
