@@ -1,0 +1,95 @@
+@import "tailwindcss";
+*{
+    padding:2px 2px 2px 2px;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: beige;
+    /* border: 1px solid black; */
+}
+.option3{
+    display: none;
+}
+.all:hover .option3{
+    position: absolute;
+    margin-top: 50px;
+    left: 21%;
+    padding: 14px 54px 24px 54px;
+    border-radius: 30px;
+    display: inline-flex;
+    width: fit-content;
+}
+.option4{
+    display: none;
+}
+.top:hover .option4{
+    position: absolute;
+    padding: 3%;
+    padding: 14px 54px 24px 54px;
+    border-radius: 30px;
+    margin-top: 50px;
+    left: 31%;
+    display: inline-flex;
+    width: fit-content;
+}
+.option5{
+    display: none;
+}
+.bottom:hover .option5{
+    position: absolute;
+    padding: 3%;
+    padding: 14px 54px 24px 54px;
+    border-radius: 30px;
+    margin-top: 50px;
+    left: 39%;
+    display: inline-flex;
+    width: fit-content;
+}
+.option6{
+    display: none;
+}
+.foot:hover .option6{
+    position: absolute;
+    padding: 3%;
+    padding: 14px 54px 24px 54px;
+    border-radius: 30px;
+    margin-top: 50px;
+    left: 49%;
+    display: inline-flex;
+    width: fit-content;
+}
+.option7{
+    display: none;
+}
+.fresh:hover .option7{
+    position: absolute;
+    padding: 3%;
+    padding: 14px 54px 24px 54px;
+    border-radius: 30px;
+    margin-top: 50px;
+    left: 57%;
+    display: inline-flex;
+    width: fit-content;
+}
+.option8{
+    display: none;
+}
+.ess:hover .option8{
+    position: absolute;
+    padding: 3%;
+    padding: 14px 54px 24px 54px;
+    border-radius: 30px;
+    margin-top: 50px;
+    left: 67%;
+    display: inline-flex;
+    width: fit-content;
+}
+.scroll::-webkit-scrollbar
+{
+    display: none;
+}
+ .footer, .footer>div,.footer>div>img, .footer>div>span {
+    background-color: rgb(212, 206, 206);
+}
+.footer2{
+    background-color:rgb(21, 32, 5);
+}
