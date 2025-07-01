@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+*{
+    background-color: yellow;
+}
+#btn{
+    background-color:rgb(20, 20, 68);
+    color: aliceblue;
+}
+#print{
+    background-color: rgb(20, 20, 68);
+}
