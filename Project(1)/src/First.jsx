@@ -64,7 +64,7 @@ export default function First() {
 
         {/* men-women */}
         <div class="men-women" style={{display:'flex',marginTop:'40px',}}>
-            <div class="men" >
+            <div class="men">
                 <img src="14.jpg" width={'100%'}></img>
             </div>
             <div class="women">

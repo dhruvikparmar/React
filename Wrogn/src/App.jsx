@@ -8,17 +8,16 @@ import Sidebar from './Sidebar'
 import Footer from './Footer'
 import Footer2 from './Footer2'
 
-
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <Navbar/>
-      <Hero/>
-      <Sidebar/>
-      <Footer/>
-      <Footer2/>
+    <>      
+        <Navbar/>
+        <Hero/>
+        <Sidebar/>
+        <Footer/>
+        <Footer2/>
     </>
   )
 }

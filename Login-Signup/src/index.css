@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+input{
+    height: 40px;
+    width: 20%;
+    font-size: 15px;
+    padding-left: 20px;
+}
+button
+{
+    border-radius: 5px;
+    border: 1px solid wheat;
+    background-color: rgb(6, 6, 247);
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    color: white;
+}

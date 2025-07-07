@@ -2,6 +2,18 @@ import { useState } from 'react'
 import ArryObj from './ArryObj'
 import UseState from './UseState'
 import './App.css'
+import Events from './Events'
+import UseRef from './UseRef'
+import Form from './Form'
+import Calc from './Calc'
+import FormValidation from './FormValidation'
+import LocalStorage from './LocalStorage'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './Router/Home'
+import About from './Router/About'
+import Contact from './Router/Contact'
+import Create from './CrudWithRouting/Create'
+import Display from './CrudWithRouting/Display'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -15,8 +27,24 @@ function App() {
 
   return (
     <div>
-      <UseState/>
+      {/* <Events/>
+
+      <UseRef/> */}
+
+      {/* <Form/> */}
+
+      {/* <Calc/> */}
+      {/* <FormValidation/> */}
+      {/* <LocalStorage/> */}
       {/* <ArryObj data={arr} student={"sumit"}/> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Display/>}></Route>
+          <Route path='/Create' element={<Create/>}></Route>
+          {/*<Route path='/contact' element={<Contact/>}></Route> */}
+        </Routes>
+      </BrowserRouter>
+
     </div>
     //<div>
     // {
