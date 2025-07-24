@@ -14,6 +14,14 @@ import About from './Router/About'
 import Contact from './Router/Contact'
 import Create from './CrudWithRouting/Create'
 import Display from './CrudWithRouting/Display'
+import Searching from './Searching'
+import Chome from './Context/Chome'
+import { Provider } from 'react-redux'
+import { store } from './app/Rstore'
+import RreduxCounter from './RreduxCounter'
+import Todoredux from './Todoredux'
+import Apiredux from './Apiredux'
+import UseReducer from './UseReducer'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -37,14 +45,21 @@ function App() {
       {/* <FormValidation/> */}
       {/* <LocalStorage/> */}
       {/* <ArryObj data={arr} student={"sumit"}/> */}
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Display/>}></Route>
-          <Route path='/Create' element={<Create/>}></Route>
-          {/*<Route path='/contact' element={<Contact/>}></Route> */}
-        </Routes>
-      </BrowserRouter>
 
+      {/* <BrowserRouter> */}
+        {/* <Routes> */}
+          {/* <Route path='/' element={<Display/>}></Route> */}
+          {/* <Route path='/Create' element={<Create/>}></Route> */}
+          {/*<Route path='/contact' element={<Contact/>}></Route> */}
+        {/* </Routes> */}
+      {/* </BrowserRouter> */}
+        {/* <Searching/> */}
+        {/* <Chome/> */}
+        <Provider store={store}>
+          {/* <RreduxCounter/> */}
+          <Apiredux/>
+        </Provider>
+        {/* <UseReducer/> */}
     </div>
     //<div>
     // {
