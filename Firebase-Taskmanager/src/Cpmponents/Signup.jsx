@@ -1,8 +1,8 @@
 
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { createUserWithEmailAndPassword } from 'firebase/auth'
-import { auth, db } from '/Fbconfig'
+import { createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth'
+import { auth, db , provider} from '/Fbconfig'
 import Swal from 'sweetalert2'
 import { setDoc } from 'firebase/firestore/lite'
 import { doc } from 'firebase/firestore'
@@ -37,6 +37,14 @@ export default function Signup() {
             });
         navigate("/Login")
     }
+     const handleGoogle = async () => {
+        await signInWithPopup(auth,provider).then((res) => {
+            // alert(res.user.email + " signed in successfully");
+            console.log(res);
+            
+        })
+    }
+
 
     return (
         <>
@@ -138,6 +146,7 @@ export default function Signup() {
                             </label>
                         </div>
                         <button onClick={handlesignup} type='button' className='border mt-1 text-xl h-10 hover:cursor-pointer bg-blue-500 text-white rounded-lg'>Register</button>
+                        <button onClick={handleGoogle} type='button' className='border text-xl h-10 hover:cursor-pointer bg-blue-500 text-white rounded-lg'>Sign in with Google</button>
                         <p className='font-extralight'> Already Have an accout ?
                             <Link to='/Login' className='text-blue-400'> Login</Link></p>
                     </div>
